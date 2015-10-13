@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Weather App</title>
+        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <base href="/" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body ng-app="weatherApp">
+        <div class="container">
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div ng-view="views/city.html" ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- Library Scripts -->
+    <script src="libs/angular/angular.js"></script>
+    <script src="libs/angular-route/angular-route.js"></script>
+    <script src="libs/angular-resource/angular-resource.js"></script>
+
+    <!-- Application Scripts -->
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/services/weather.js"></script>
+    <script src="/scripts/controllers/merchantCtrl.js"></script>
+    <script src="/scripts/controllers/homeCtrl.js"></script>
+    <script src="/scripts/controllers/couponsCtrl.js"></script>
+    <script src="/scripts/controllers/cityCtrl.js"></script>
+    <script src="/scripts/controllers/coordinatesCtrl.js"></script>
+</html>
