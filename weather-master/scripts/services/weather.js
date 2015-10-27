@@ -10,6 +10,7 @@ angular
 
         return {
             getWeather: function(weatherParams) {
+                weatherParams['APPID'] = '<API_KEY>';
                 return Weather.get(weatherParams, function(successResult) {
                     return successResult;
                 }, function(errorResult) {
